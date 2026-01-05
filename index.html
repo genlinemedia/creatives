@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genline | High-Performance Finance Thumbnails</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="glow-bg"></div>
+
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <div class="logo">
+                <img src="logo.png" alt="Genline Logo">
+            </div>
+            <div class="nav-links">
+                <a href="#portfolio">Portfolio</a>
+                <a href="#services">Process</a>
+                <a href="mailto:krypta.creatives@gmail.com" class="nav-cta">Work with us</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-badge">The Finance Creator's Edge</div>
+            <h1>The higher the <span class="green-text">CTR</span>,<br>the faster you <span class="green-text">Scale</span>.</h1>
+            <p>Genline engineers high-authority thumbnails for business and finance creators that convert. Data-backed. Revenue focused.</p>
+            <div class="hero-actions">
+                <a href="#portfolio" class="btn-main">View Recent Work</a>
+                <a href="#contact" class="btn-outline">Inquire Now</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2 class="section-label reveal">Selected Case Studies</h2>
+            
+            <div class="portfolio-grid">
+                <div class="work-card reveal">
+                    <div class="work-image">
+                        <img src="thumb1.png" alt="Finance Strategy Breakdown">
+                    </div>
+                    <div class="work-content">
+                        <div class="descriptor">
+                            <h4>Pattern Interruption</h4>
+                            <p>The intense "breaking the fourth wall" gaze paired with a direct 'START HERE' command creates an immediate psychological stop-scroll effect for trading audiences.</p>
+                        </div>
+                        <div class="descriptor">
+                            <h4>Authority Proofing</h4>
+                            <p>The glowing emerald PnL graph and high-end watch act as silent "wealth signals," establishing instant credibility before the user even reads the title.</p>
+                        </div>
+                        <div class="descriptor">
+                            <h4>Emerald Grading</h4>
+                            <p>Strategic use of green ambient lighting ties the subject to the concept of "growth" and "money," a classic high-CTR color tactic in finance.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card reveal">
+                    <div class="work-image">
+                        <img src="thumb2.png" alt="Stock Investing Breakdown">
+                    </div>
+                    <div class="work-content">
+                        <div class="descriptor">
+                            <h4>Comparative Conflict</h4>
+                            <p>Placing a high-yield asset in a "trash can" next to the Apple logo creates an immediate intellectual conflict that forces the viewer to click to find out why.</p>
+                        </div>
+                        <div class="descriptor">
+                            <h4>Community Validation</h4>
+                            <p>The Twitter/X style comment box leverages social proof, making the video feel like a trending conversation rather than just a lecture.</p>
+                        </div>
+                        <div class="descriptor">
+                            <h4>The Curiosity Gap</h4>
+                            <p>By pixelating the third stock option with a glowing question mark, we create an information gap that can only be closed by watching the video.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card reveal">
+                    <div class="work-image">
+                        <img src="thumb3.png" alt="E-commerce AI Breakdown">
+                    </div>
+                    <div class="work-content">
+                        <div class="descriptor">
+                            <h4>Dopamine Mimicry</h4>
+                            <p>Stacked Shopify 'New Order' notifications trigger a dopamine response in aspiring entrepreneurs, visualizing the exact result they are looking for.</p>
+                        </div>
+                        <div class="descriptor">
+                            <h4>Frictionless Promise</h4>
+                            <p>The "3 HOURS" claim combined with a bright, smiling subject suggests a low-barrier, high-reward system that feels achievable.</p>
+                        </div>
+                        <div class="descriptor">
+                            <h4>Directional Guidance</h4>
+                            <p>The subject's physical point toward the notification stack acts as a silent "Look Here" cue, focusing all visual energy on the proof of success.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="cta-box reveal">
+                <h2>Ready to elevate your production?</h2>
+                <p>Limited availability for new clients. Apply for a partnership.</p>
+                <a href="mailto:krypta.creatives@gmail.com" class="btn-main">Contact Genline</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-flex">
+            <p>&copy; 2026 GENLINE AGENCY. ALL RIGHTS RESERVED.</p>
+            <p>AUSTIN / LONDON / REMOTE</p>
+        </div>
+    </footer>
+
+    <script>
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
